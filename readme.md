@@ -1,6 +1,6 @@
 # Requisitos
 - PHP >= 7.2.12
-- PHP PDO sqlite3
+- PHP PDO SQlite3
 - Composer
 
 # Sistemas operacionais testados
@@ -11,21 +11,21 @@
 Clonar o repositório e instalar as dependências com composer:
 
 ```bash
-$ git clone https://adevecchi@bitbucket.org/adevecchi/assessment-backend-xp.git
+$ git clone https://github.com/adevecchi/crud-php-pdo-sqlite3.git
 
-$ cd assessment-backend-xp/
-
-$ git checkout desafio
-Switched to a new branch 'desafio'
-Branch 'desafio' set up to track remote branch 'desafio' from 'origin'.
+$ cd crud-php-pdo-sqlite3/
 
 $ composer install
 Loading composer repositories with package information
 Updating dependencies (including require-dev)
-Package operations: 3 installs, 0 updates, 0 removals
+Package operations: 7 installs, 0 updates, 0 removals
   - Installing steampixel/simple-php-router (0.4.1): Loading from cache
   - Installing psr/log (1.1.3): Loading from cache
   - Installing monolog/monolog (2.1.1): Loading from cache
+  - Installing symfony/polyfill-php80 (v1.18.1): Loading from cache
+  - Installing symfony/polyfill-mbstring (v1.18.1): Loading from cache
+  - Installing symfony/deprecation-contracts (v2.1.3): Loading from cache
+  - Installing symfony/http-foundation (v5.1.3): Loading from cache
 ```
 
 Depois de clonar o repositório e instalar as dependências com composer, executar o servidor embutido do PHP:
@@ -39,10 +39,25 @@ Listening on http://localhost:8080
 Após executar os comando acima é só digitar **localhost:8080** na barra de endereço do navegador para testar.
 
 # Descrição
-Foi utilizado o Bando de dados SQLite3. O arquivo dbsqlite.db se encontra no diretório app/data/dbsqlite.db com alguns resgistros para teste.
+- **Bando de dados SQLite3**: Se encontra no diretório app/data/dbsqlite.db com alguns resgistros cadastrados.
 
-Foi utilizado o Monolog para registrar as ações realizadas em arquivo de log. O diretório com os log's se encontra em app/logs/
+- **Simple PHP Router**: Realiza o roteamento da URL.
 
-Foi utilizado o Simple PHP Router para tratar as requisições.
+- **Symfony HttpFoundation Component**: Define uma camada orientada a objetos para a especificação HTTP.
 
-Também foi utilizad o jQuery, AlertifyJs e jQuery Mask.
+- **Monolog**: Registra as ações realizadas, o diretório com os logs se encontra em app/logs/
+
+- **Front-End**: Utilizado o jQuery, jQuery Mask e AlertifyJs.
+
+# Captura de tela
+![Tela Dashboard](https://github.com/adevecchi/crud-php-pdo-sqlite3/blob/master/public/assets/images/screenshot/dashboard.png)
+
+![Tela Product](https://github.com/adevecchi/crud-php-pdo-sqlite3/blob/master/public/assets/images/screenshot/product.png)
+
+![Tela Edit Product](https://github.com/adevecchi/crud-php-pdo-sqlite3/blob/master/public/assets/images/screenshot/product-edit.png)
+
+![Tela Delete Product](https://github.com/adevecchi/crud-php-pdo-sqlite3/blob/master/public/assets/images/screenshot/product-delete.png)
+
+![Tela Category](https://github.com/adevecchi/crud-php-pdo-sqlite3/blob/master/public/assets/images/screenshot/category.png)
+
+![Tela Add Category](https://github.com/adevecchi/crud-php-pdo-sqlite3/blob/master/public/assets/images/screenshot/category-add.png)
