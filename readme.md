@@ -11,9 +11,9 @@
 Clonar o repositório e instalar as dependências com composer:
 
 ```bash
-$ git clone https://github.com/adevecchi/crud-php-pdo-sqlite3.git
+$ https://github.com/adevecchi/sistema-gerenciamento-produtos.git
 
-$ cd crud-php-pdo-sqlite3/
+$ cd sistema-gerenciamento-produtos/
 
 $ composer install
 Loading composer repositories with package information
